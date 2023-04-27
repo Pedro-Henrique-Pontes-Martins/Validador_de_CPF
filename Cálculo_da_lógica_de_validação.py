@@ -54,10 +54,10 @@ while válido == False:
     print('Digite um CPF:')
     CPF = input()
     if verificador(CPF) == True:
-        print('Este CPF é verdadeiro.')
+        print('Este CPF é válido.')
         válido = True
     elif verificador(CPF) == False:
-        print('Este CPF é falso.')
+        print('Este CPF é inválido.')
         válido = True
     else:
-        print('O CPF digitado é inválido')
+        print('O CPF deve conter 11 números.')
