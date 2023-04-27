@@ -18,3 +18,8 @@ def verificador(cpf):
         contador += 1
 
     somaDosNúmeros = sum(somaDosNúmeros)
+    resto = somaDosNúmeros % 11 
+    if resto < 2:
+        cpfComparação.append(0)
+    if resto >= 2:
+        cpfComparação.append(11 - resto)
